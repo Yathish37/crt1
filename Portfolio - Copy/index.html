@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet" crossorigin="anonymous" integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg==" referrerpolicy="no-referrer" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Yatish | Full-Stack Web Developer</title>
+</head>
+<body>
+    <style>
+        #loader {
+            background: #000 url(assets/img/loader.gif) no-repeat center;
+            background-size: 15%;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            z-index: 10000;
+        }
+    </style>
+    <div id="loader"></div>
+    <script>
+        window.addEventListener('load', function() {
+            let x = document.getElementById('loader');
+            x.style.display = 'none';
+        });
+    </script>
+    <header>
+        <a href="#" class="logo">Dhannani <span>Yathish</span>.</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+    <section class="home" id="home">
+        <div class="social">
+            <a href="https://github.com/Yathish37"><i class="bx bxl-github"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="https://facebook.com/Dhannani Yathish"><i class="bx bxl-facebook"></i></a>
+        </div>
+        <div class="home-img">
+            <img src="assets/img/main.jpg" alt=" Image of Yatish">
+        </div>
+        <div class="home-text">
+            <span>Hello, I'm</span>
+            <h1>Dhannani Yathish</h1>
+            <h2>Full Stack Web Developer</h2>
+            <p>I am a Web developer. If you need to build a professional website, you can hire me! Please choose any of my services or plans.</p>
+            <a href="assets/img/resume.jpg" class="btn" onclick="downloadCV()">Download CV</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+            <span>Introduction</span>
+        </div>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="assets/img/main.jpg" alt="Image of Pavan">
+            </div>
+            <div class="about-text">
+                <p>Looking for a web developer to take your online presence to the next level? Look no further! With a strong passion for creating beautiful, functional websites, I am dedicated to delivering high-quality results that meet your unique needs and requirements. I understand the importance of having a website that not only looks great but is also optimized for search engines and provides a seamless user experience. Whether you're starting from scratch or need to upgrade your existing site, I will work closely with you to bring your vision to life. Let's bring your online goals to reality. Contact me now to get started!</p>
+                <div class="information">
+                    <div class="info-box"><i class="bx bx-laptop"></i><span> Chundru Pavan Kumar.</span></div>
+                    <div class="info-box"><i class="bx bxs-phone"></i><span>9063847169</span></div>
+                    <div class="info-box"><i class="bx bxs-envelope"></i><span>pavankumarchundru0@gmail.com</span></div>
+                </div>
+                <a href="assets/img/resume.jpg" class="btn" onclick="downloadCV()">Download CV</a>
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>Skills</h2>
+            <span>My Skills</span>
+        </div>
+        <div class="skills-container">
+            <div class="bars">
+                <div class="bars-box placeholder-wave">
+                    <h3>HTML</h3>
+                    <span>94%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+                <div class="bars-box placeholder-wave">
+                    <h3>CSS</h3>
+                    <span>84%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+                <div class="bars-box placeholder-wave">
+                    <h3>JavaScript</h3>
+                    <span>74%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <div class="bars-box placeholder-wave">
+                    <h3>SQL</h3>
+                    <span>80%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar react-bar"></div>
+                </div>
+            </div>
+            <div class="skills-img">
+                <img src="assets/img/main.jpg" alt="Image of Yathish">
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="heading">
+            <h2>Services</h2>
+            <span>Our Services</span>
+        </div>
+        <div class="services-content">
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Development</h3>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="services-box">
+                <i class="bx bx-server"></i>
+                <h3>Backend Development</h3>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="services-box">
+                <i class="bx bx-data"></i>
+                <h3>Database</h3>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <span>Connect With Me</span>
+        </div>
+        <div class="contact-form">
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea name="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+                <input type="submit" class="contact-button" value="Send">
+            </form>
+        </div>
+    </section>
+    <div class="footer">
+        <h2>Follow Me</h2>
+        <div class="footer-social">
+            <a href="https://facebook.com/Yathish"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-youtube"></i></a>
+        </div>
+    </div>
+</body>
+</html>
